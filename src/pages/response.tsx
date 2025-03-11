@@ -5,7 +5,6 @@ import { Link, useParams } from "wouter";
 import resps from "../resps.json";
 import { useCounter } from '../hooks/useCounterContext';
 
-
 export default function Response(id: any) {
   // console.log("test");
   let id_num = parseInt(id.params.week);
@@ -18,24 +17,31 @@ export default function Response(id: any) {
   const { toggleLike, isRespLiked, likedResps } = useCounter();
   
   // let likeText = isRespLiked(id_num) ? "Unlike" : "Like";
-  let likeIcon = isRespLiked(id_num) ? "https://cdn.glitch.global/85701763-95d4-4e0a-9eaa-56b66f30513b/icons8-gefa%CC%88llt-mir-50-fill.png?v=1741344550834" : "https://cdn.glitch.global/85701763-95d4-4e0a-9eaa-56b66f30513b/icons8-gefa%CC%88llt-mir-50.png?v=1741344504022";
+  let likeIcon = isRespLiked(id_num) ? "icons/icons8-gefällt-mir-50-fill.png" : "/icons/icons8-gefällt-mir-50.png";
   
   let parsedResps = JSON.parse(JSON.stringify(resps))
   let resp = parsedResps.responses[id_num-1];  
   // console.log(resp);
   let imgs = resp.images;
+
+  const getImageUrl = (imgPath) => {
+    return new URL(`../assets/${imgPath}`, import.meta.url).href;
+  };
     
-  const images = imgs.map((img) =>
-        <div className="rp imgbox">
-          <img
-            className="rp center-fit"
-            src={img.img}
-          />     
-          <div className="rp imgcap">
-              {img.cap}
-          </div>
-        </div>               
-    );
+  const images = imgs.map((img) => {
+    const imgPath = img.img;
+    return(
+      <div className="rp imgbox">
+        <img
+          className="rp center-fit"
+          src={imgPath}
+        />     
+        <div className="rp imgcap">
+            {img.cap}
+        </div>
+      </div>
+    )
+  });
   
   return (
     <div className="rp">
