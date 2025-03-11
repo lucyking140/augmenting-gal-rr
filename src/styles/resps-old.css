@@ -1,0 +1,92 @@
+/* .title{
+  font-size: 4rem;
+  font-weight: 700;
+  width: 90%;
+  padding-bottom: 4%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+
+@media only screen and (min-width: 1000px) {
+  .title{
+    flex-direction: row;
+    padding-bottom: 0%;
+  }
+}*/
+
+.subheading{
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+h3{
+  font-size: 3.5rem;
+}
+
+p, button{
+  font-size: 2.5rem;
+}
+
+.container{
+/*   background-color: orange; */
+/*   padding: 1% 0%; */
+/*   height: 100%; */
+  gap: 1%;
+/*   overflow: scroll; */
+}
+
+.content{
+/*   --wid: 100%; */
+  display: flex;
+  flex-direction: column;
+/*   gap: 1%; */
+  justify-content: flex-start;
+/*   background-color: lightpink; */
+  width: 90%;
+  padding: 0% 1%;
+}
+
+
+
+.center-fit {
+  object-fit: cover;
+  width: 100%; 
+  height: 90%;
+}
+
+.imgcap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  
+  /* font size adjustments */
+  
+  .imgcap{
+    font-size: 0.8rem;
+  }
+  
+/*   .title{
+    font-size: 1.6rem;
+  } */
+  
+  .subheading{
+    font-size: 1.4rem;
+  }
+  
+  h3{
+    font-size: 1.4rem;
+  }
+  
+  p, button{
+    font-size: 1.2rem;
+  }
+  
+}

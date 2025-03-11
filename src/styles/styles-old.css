@@ -1,0 +1,229 @@
+/* NOT IN USE */
+
+
+
+
+
+
+
+
+
+
+
+a {
+  text-decoration: none;
+  padding: 0px;
+}
+
+/* Source: https://getcssscan.com/css-buttons-examples */
+button {
+  border-radius: 8px;
+  border-width: 0;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+button:hover {
+  background-color: #c7c9c8;
+}
+
+button:active {
+  background-color: #b3b5b4;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 3rem;
+}
+
+/* DONE */
+.container {
+  display: flex;
+  flex-direction: column;
+/*   height: 100%;
+  width: 100%; */
+  justify-content: flex-start; /* start all items on the left of the FB */
+/*   gap: 20px; /* gap between items in direction of flex-dir (cols in this case) */
+  align-items: center; /* aligns items in the NON flex-dir (aka rows in this case) */
+  font-family: Arial, Helvetica, sans-serif;
+/*   padding: 2%; */
+/*   overflow: scroll; */
+}
+
+/* DONE */
+.title {
+  width: 60%;
+}
+
+/* DONE */
+.title-header {
+  /*   background-color: powderblue; */
+  /*   width: 90%; */
+  /*   height: 5%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*  Done */
+.header-links {
+  /*   height: 100%; */
+  /*   background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  /*   justify-content: flex-start; */
+  gap: 5%;
+  align-items: flex-start;
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  .header-links {
+    width: 40%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/* DONE  */
+.resp-container {
+  display: flex;
+  /*   background-color: lightgreen; */
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 2%;
+  /*   overflow: scroll; */
+  gap: 4%;
+}
+
+/* DONE */
+.response {
+  display: flex;
+  overflow: hidden; /* to hide borders of picture */
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  /*   background-color: lightgrey; */
+  border-radius: 12px;
+}
+
+.response:hover {
+  transform: scale(1.01);
+}
+
+.resp-empty {
+  outline: dashed 1px darkgrey;
+/*   height: 1000px; */
+  height: 100%;
+  width: 20%;
+}
+
+.resp-empty:hover {
+  transform: scale(1); /* removing hover for empty/unclickable responses */
+}
+
+.resp-img {
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resp-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resp-title {
+  /*   height: 25%; */
+  background-color: lightgrey;
+  width: 100%;
+  padding: 0px;
+  font-style: bold;
+}
+
+.resp-title p {
+  padding-left: 3%;
+  font-size: 3.5rem;
+}
+
+.desc {
+  width: 90%;
+  /*   background-color: lightgrey; */
+}
+
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  .title-header {
+    /*   background-color: powderblue; */
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/*   DONE  */
+  .resp-container {
+    display: flex;
+    /*   background-color: lightgreen; */
+    flex-direction: row;
+    height: 30%;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0%;
+    overflow: hidden;
+  }
+
+  .response {
+    display: flex;
+    overflow: hidden; /* to hide borders of picture */
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    background-color: lightgrey;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+
+  .resp-img {
+    height: 75%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .resp-title {
+    height: 35%;
+    /*     background-color: lightgrey; */
+    width: 100%;
+    padding-left: 3%;
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  /* adjusting font sizes */
+  button {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
