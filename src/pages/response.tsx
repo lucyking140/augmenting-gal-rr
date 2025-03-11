@@ -17,8 +17,8 @@ export default function Response(id: any) {
   const { toggleLike, isRespLiked, likedResps } = useCounter();
   
   // let likeText = isRespLiked(id_num) ? "Unlike" : "Like";
-  let likeIcon = isRespLiked(id_num) ? "icons/icons8-gefällt-mir-50-fill.png" : "/icons/icons8-gefällt-mir-50.png";
-  
+  let likeIcon = isRespLiked(id_num) ? "/icons/like-icon-filled.png" : "/icons/like-icon-unfilled.png";
+
   let parsedResps = JSON.parse(JSON.stringify(resps))
   let resp = parsedResps.responses[id_num-1];  
   // console.log(resp);
