@@ -112,7 +112,7 @@ export default function Home(like_count: number) {
               </Link>
           
           <div className="desc">
-            Readers' Favorites
+            Your Favorites
           </div>
 
           <div className="hl"></div>
