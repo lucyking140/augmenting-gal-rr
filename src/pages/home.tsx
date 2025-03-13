@@ -23,7 +23,7 @@ import { useCounter } from '../hooks/useCounterContext';
 
 export default function Home(like_count: number) {
   
-  let mostRecent = 7 // current number of responses shown
+  let mostRecent = 8 // current number of responses shown
   
   let parsedResps = JSON.parse(JSON.stringify(resps)).responses  
   
@@ -52,7 +52,15 @@ export default function Home(like_count: number) {
   
   // most recent response to put at the top of the page
   const topResp = parsedResps[mostRecent - 1];
-      
+
+  //dropdown for project info
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    console.log("reaching open");
+    setOpen(!open);
+  };
+
   return (
     <div className="container">
       <div className="title-header">
@@ -61,11 +69,24 @@ export default function Home(like_count: number) {
           </div>
         
           <div className="subtitle">
-            Augmenting the Gallery, Spring 2025
-          </div>
-        
-          <div className="subtitle" style={{paddingTop: '15px'}}>
-            <Link to={`/project-ideas`}> <button> Project Ideas </button> </Link>
+            <div> Augmenting the Gallery, Spring 2025 </div>
+            <div className="proj-menu-box" onClick={handleOpen}>
+              <div className="proj-menu-title">
+                Final Project
+                <img className={open ? "proj-icon open" : "proj-icon" } src="/icons/down.png"/>
+              </div>
+              
+              {open ? (
+                <ul className="proj-drop-menu">
+                  <li className="menu-item">
+                    <Link to={`/project-ideas`}> Initial Ideas </Link>
+                  </li>
+                  <li className="menu-item">
+                  <Link to={`/project-planning`}> Wireframe and References </Link>
+                  </li>
+                </ul>
+              ) : null}
+            </div>
           </div>
         
         {/*<div className="header-links">

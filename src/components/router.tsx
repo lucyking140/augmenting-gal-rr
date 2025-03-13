@@ -5,6 +5,7 @@ import About from "../pages/about";
 import Response from "../pages/response";
 // import Hypertext from "../pages/hypertext";
 import ProjectIdeas from "../pages/project-ideas";
+import ProjectPlanning from "../pages/project-planning";
 
 /**
 * The router is imported in app.jsx
@@ -21,5 +22,6 @@ export default () => (
       <Route path="/response/:week" component={Response} />
       <Route path="/project-ideas" component={ProjectIdeas} />
       {/* <Route path="/hypertext" component={Hypertext} /> --> */}
+      <Route path="/project-planning" component={ProjectPlanning} />
     </Switch>
 );
