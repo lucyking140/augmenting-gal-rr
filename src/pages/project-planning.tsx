@@ -43,6 +43,9 @@ export default function ProjectPlanning() {
                     <li>
                         <a href="https://studioboum.com/en?ref=minimal.gallery" target="_blank"> for simple design that is still readable with a background image (e.g. if I let users change the background image). Also very simple blank-page design  </a>
                     </li>
+                    <li>
+                        <a href="https://sucukundbratwurst.de/" target="_blank"> Rotating 3d objects </a>
+                    </li>
                 </ul>
             </div>
         </div>
