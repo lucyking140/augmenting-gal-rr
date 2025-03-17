@@ -21,13 +21,14 @@ export default function ProjectPlanning() {
 
         <div className="rp content" style={{alignItems: 'flex-start'}}>
 
-            <div className="rp subtitle" style={{ fontWeight: '700', paddingBottom: '15px' }}>
+            <div className="rp subtitle" style={{ fontWeight: '700', paddingBottom: '15px'}}>
                 <a href="https://www.figma.com/design/wzVRM9ULgL2GLVV5rvMA6A/Our-Machines?node-id=0-1&p=f&t=UU6HdqmLjqIYFapJ-0" target='_blank'> View wireframe here </a>
             </div>
 
-            <div className="rp subtitle" styel={{ fontWeight: '700'}}>
+            <div className="rp subtitle" style={{ fontWeight: '700',  fontStyle: 'normal' }}>
                 Reference Sites
             </div>
+            
             <div className="hl"> </div>
             <div className="idea-list">
                 <ul>
