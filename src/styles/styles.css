@@ -419,8 +419,6 @@
   }
 }
 
-
-
 .week-num{
   font-size: 2.2rem;
   min-width: 25px;
@@ -712,6 +710,7 @@ button:active {
 
 .rp .like-icon{
   width: 25px;
+}
 
 .proj-menu-box{
   display: flex;
