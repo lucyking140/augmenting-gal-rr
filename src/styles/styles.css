@@ -450,8 +450,6 @@
   
 }
 
-
-
 .hl{
   border-top: 1px solid black;
   width: 100%;
@@ -714,7 +712,6 @@ button:active {
 
 .rp .like-icon{
   width: 25px;
-}
 
 .proj-menu-box{
   display: flex;
