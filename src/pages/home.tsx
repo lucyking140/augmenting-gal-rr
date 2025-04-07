@@ -23,7 +23,7 @@ import { useCounter } from '../hooks/useCounterContext';
 
 export default function Home(like_count: number) {
   
-  let mostRecent = 9 // current number of responses shown
+  let mostRecent = 10 // current number of responses shown
   
   let parsedResps = JSON.parse(JSON.stringify(resps)).responses  
   
