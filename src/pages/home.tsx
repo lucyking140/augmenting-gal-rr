@@ -21,9 +21,9 @@ import { useCounter } from '../hooks/useCounterContext';
 * The function in app.jsx defines the page wrapper that this appears in along with the footer
 */
 
-export default function Home(like_count: number) {
+export default function Home() {
   
-  let mostRecent = 11 // current number of responses shown
+  let mostRecent = 12 // current number of responses shown
   
   let parsedResps = JSON.parse(JSON.stringify(resps)).responses  
   
